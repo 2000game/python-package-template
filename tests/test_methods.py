@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 from python_package.hello_world import hello_world
+import pytest
 
 
 def hello_test():
@@ -30,3 +31,10 @@ def test_int_hello():
     https://docs.pytest.org/en/6.2.x/example/markers.html#automatically-adding-markers-based-on-test-names
     """
     hello_test()
+
+@pytest.mark.integration
+def test_integrtion():
+    """
+    This is an integration test
+    """
+    pass
